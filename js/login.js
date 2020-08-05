@@ -45,7 +45,7 @@ function login(email, password) {
 	auth
 		.signInWithEmailAndPassword(email, password)
 		.then((userCredential) => {
-			if (userCredential.user.uid === 'asEt5cezmvTlbxxBwTij68cOZzz2') {
+			if (userCredential.user.uid === 'VPo6CoD9vJOldgkJNRWx9xLZR1l1') {
 				window.location.replace(`${location.origin}/admin.html`)
 			} else {
 				let userDetails = {
