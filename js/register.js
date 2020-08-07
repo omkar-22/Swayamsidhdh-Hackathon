@@ -6,7 +6,6 @@ const error = document.getElementById('error-msg')
 const thanks = document.getElementById('thanks')
 
 export function createTeam(info) {
-	console.log(info)
 	auth
 		.createUserWithEmailAndPassword(info.email, info.password)
 		.then(({ user: { uid } }) => {
@@ -16,7 +15,8 @@ export function createTeam(info) {
 			form.reset()
 			thanks.removeAttribute('hidden')
 			loader.setAttribute('hidden', true)
-			console.log('done')
+			alert('done')
+			window.location.replace(`${location.origin}/home.html`)
 		})
 		.catch((err) => {
 			error.removeAttribute('hidden', '')

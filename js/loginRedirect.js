@@ -7,7 +7,6 @@ function redirect() {
 			window.location.replace(`${location.origin}/admin.html`)
 		} else {
 			document.querySelector('body').removeAttribute('hidden', '')
-			console.log(user)
 		}
 	})
 }
