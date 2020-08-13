@@ -1,6 +1,7 @@
 body {
 	background: black;
 	color: #02feff;
+	overflow: hidden;
 }
 
 @font-face {
@@ -656,7 +657,7 @@ ul {
 }
 
 #time {
-	margin-left: 110px;
+	margin-left: 125px;
 	position: absolute;
 	background: rgba(0, 0, 0, 0.8);
 	line-height: 0;
@@ -720,7 +721,7 @@ ul {
 		position: absolute;
 		float: left;
 		width: 210px;
-		top: 72%;
+		top: 75%;
 		left: 0px;
 	}
 	.main-title {
@@ -1091,4 +1092,10 @@ a.button:hover {
 	background-color: #02feff;
 	text-decoration: none;
 	border-color: #02feff;
+}
+
+.reg_text {
+	font-size: 14px;
+	height: 5px;
+	line-height: 80px;
 }

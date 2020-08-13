@@ -24,6 +24,16 @@
 	</head>
 	<body style="overflow-x: hidden;">
 		<ul class="nav justify-content-end">
+			<li class="nav-item active" id="navBtn">
+				<!-- Button trigger modal -->
+				<a
+					class="text-white btn"
+					data-toggle="modal"
+					data-target="#contact"
+				>
+					Contact Us
+				</a>
+			</li>
 			<li class="nav-item active navBtn" hidden>
 				<a class="nav-link text-white" href="login.pug">Login</a>
 			</li>
@@ -35,80 +45,95 @@
 			</li>
 		</ul>
 
-		<!-- Button trigger modal -->
-		<a class="text-white btn" data-toggle="modal" data-target="#contact">
-			Contact Us
-		</a>
-		
 		<!-- Modal -->
-		<div class="modal fade" 
-		id="contact" tabindex="-1" 
-		role="dialog" aria-labelledby="exampleModalCenterTitle" 
-		aria-hidden="true">
-			
-		<div 
-		   class="modal-dialog modal-dialog-centered" 
-		   role="document"
+		<div
+			class="modal fade"
+			id="contact"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="exampleModalCenterTitle"
+			aria-hidden="true"
 		>
-			<div class="modal-content">
-				<div class="modal-header">
-				<h5 class="modal-title" id="contact">Contact Us</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-				</div>
-				<div class="modal-body">
-					 <div class="row">
-						<div class="col-6">
-							<p>Pratik Danavale</p>
-						</div>
-						<div class="col-6">
-							<i class="fa fa-mobile"></i> Phone:
-							<a href="tel:+91 9225264593" class="text-black"
-								>+91 9225264593</a
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="contact">Contact Us</h5>
+						<button
+							type="button"
+							class="close"
+							data-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-6">
+								<p>Pratik Danavale</p>
+							</div>
+							<div class="col-6">
+								<i class="fa fa-mobile"></i> Phone:
+								<a href="tel:+91 9225264593" class="text-black"
+									>+91 9225264593</a
+								>
+							</div>
+
+							<div class="col-6">
+								<p>Amruta Kumbhar</p>
+							</div>
+							<div class="col-6">
+								<i class="fa fa-mobile"></i> Phone:
+								<a href="tel:+91 8208059687" class="text-black"
+									>+91 8208059687</a
+								>
+							</div>
+
+							<div class="col-6">
+								<p>Swapnil Pawar</p>
+							</div>
+							<div class="col-6">
+								<i class="fa fa-mobile"></i> Phone:
+								<a href="tel:+91 8149594912" class="text-black"
+									>+91 8149594912</a
+								>
+							</div>
+
+							<i class="fa fa-envelope-o ml-2"></i> Email:
+							<a
+								href="mailto: uba2.0@aissmscoe.com"
+								class="ml-2 text-black"
+								>uba2.0@aissmscoe.com</a
 							>
-						</div>
 
-						<div class="col-6">
-							<p>Amruta Kumbhar</p>
-						</div>
-						<div class="col-6">
-							<i class="fa fa-mobile"></i> Phone:
-							<a href="tel:+91 8208059687" class="text-black"
-								>+91 8208059687</a
+							<a
+								href="rulebook_files/FAQ.pdf"
+								class="ml-3"
+								download="rule_book_files/FAQ.pdf"
 							>
+								<button
+									class="col-sm- btn btn-warning"
+									style="color: white;"
+								>
+									<i class="fa fa-download"></i> Download
+									FAQ's
+								</button>
+							</a>
 						</div>
-
-						<div class="col-6">
-							<p>Swapnil Pawar</p>
-						</div>
-						<div class="col-6">
-							<i class="fa fa-mobile"></i> Phone:
-							<a href="tel:+91 8149594912" class="text-black"
-								>+91 8149594912</a
-							>
-						</div>
-
-						<i class="fa fa-envelope-o ml-2"></i> Email:
-							<a href="mailto: uba2.0@aissmscoe.com" class="ml-2 text-black"
-								>uba2.0@aissmscoe.com</a>
-						
-						<a href="rulebook_files/FAQ.pdf" class="ml-3" download="rule_book_files/FAQ.pdf">
-							<button class="col-sm- btn btn-warning" style="color:white;">
-							<i class="fa fa-download"></i>	Download FAQ's
-							</button>
-						</a>
-
-					 </div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-dismiss="modal"
+						>
+							Close
+						</button>
+					</div>
 				</div>
-				<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				</div>
-			</div>
 			</div>
 		</div>
 
-		
 		<div id="arc_container">
 			<div class="arc_reactor">
 				<div class="case_container">
@@ -196,7 +221,7 @@
 				class="title-img"
 			/>
 			<div class="">
-				<a href="#" class="button">Know More</a>
+				<a href="./home.html" class="button">Know More</a>
 			</div>
 		</div>
 		<div id="date-container">
@@ -205,13 +230,25 @@
 					<div class="semi_arc_2 e4_1">
 						<div class="counterspin4"></div>
 					</div>
-					<div style="font-size: 14px; height: 5px;"><strong>Registration Ends on</strong></div>
-					<div style="font-size: 40px; height: 40px;" class="mt-3">22</div>
+					<div class="reg_text">
+						<strong>Registration Ends</strong>
+					</div>
+					<div style="font-size: 40px; height: 40px;" class="mt-3">
+						22
+					</div>
 					<div style="font-size: 25px; height: 25px;">August</div>
+				</div>
+				<div id="time" class="arc e1">
+					<div id="time-r" style="font-size: 14px; margin-top: 35px;">
+						0:0:0:0
+					</div>
+					<div style="font-size: 15px; margin-top: 20px;">
+						Remaining
+					</div>
 				</div>
 			</div>
 		</div>
-		
+
 		<div id="particles-js"></div>
 		<script src="./js/main.js"></script>
 		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
