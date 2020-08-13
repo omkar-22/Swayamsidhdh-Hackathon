@@ -15,7 +15,7 @@ export function createTeam(info) {
 			form.reset()
 			thanks.removeAttribute('hidden')
 			loader.setAttribute('hidden', true)
-			alert('done')
+			alert('Now You can submit your solutions!')
 			window.location.replace(`${location.origin}/home.html`)
 		})
 		.catch((err) => {
