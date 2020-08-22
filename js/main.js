@@ -47,7 +47,7 @@ function initializeClock(id, endtime) {
 	var timeinterval = setInterval(updateClock, 1000);
 }
 // count down timer:
-var deadline = "August 22 2020 11:59:00 GMT+0530";
+var deadline = "Septtember 04 2020 11:59:00 GMT+0530";
 
 initializeClock("time-r", deadline);
 
