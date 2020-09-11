@@ -352,29 +352,41 @@ body {
 	background-color: transparent !important;
 }
 
-
 #summary {
 	font-size: 14px;
 	line-height: 1.5;
-  }
-  
-  #summary p.collapse:not(.show) {
-	  height: 120px !important;
-	  overflow: hidden;
-	  display: -webkit-box;
-	  -webkit-line-clamp: 2;
-	  -webkit-box-orient: vertical;  
-  }
-  
-  #summary p.collapsing {
-	  max-height: 800px !important;
-  }
-  
-  #summary a.collapsed:after  {
-	  content: '+ Read More';
-  }
-  
-  #summary a:not(.collapsed):after {
-	  content: '- Read Less';
-  }
-  
+}
+
+#summary p.collapse:not(.show) {
+	height: 120px !important;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+#summary p.collapsing {
+	max-height: 800px !important;
+}
+
+#summary a.collapsed:after {
+	content: "+ Read More";
+}
+
+#summary a:not(.collapsed):after {
+	content: "- Read Less";
+}
+
+.result {
+	text-decoration: none;
+}
+
+.blink_me {
+	animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+}
