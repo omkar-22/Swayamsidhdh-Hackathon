@@ -379,10 +379,11 @@ body {
 
 .result {
 	text-decoration: none;
+	color: #092532;
 }
 
 .blink_me {
-	animation: blinker 1s linear infinite;
+	animation: blinker 1.75s linear infinite;
 }
 
 @keyframes blinker {
