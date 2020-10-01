@@ -3,8 +3,8 @@
 	"version": "1.0.0",
 	"main": "index.html",
 	"scripts": {
-		"dev": "parcel index.html home.html admin.html selection.html --open",
-		"build": "parcel build index.html home.html admin.html selection.html",
+		"dev": "parcel index.html home.html admin.html selection.html 404.html --open",
+		"build": "parcel build index.html home.html admin.html selection.html 404.html",
 		"scss": "node-sass -o css/ css/"
 	},
 	"author": "",
